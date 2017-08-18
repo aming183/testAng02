@@ -1,17 +1,34 @@
-import { Component } from '@angular/core';
-import { environment } from '../environments/environment';
+關於「資通電腦前端訓練 Angular 4 開發實戰」
+ 
+資通電腦前端訓練
+Angular 4 開發實戰
+訊息串
+同學
+關於
+
+你的作業
+
+課程雲端硬碟資料夾
+
+Classroom 日曆
+
+Google 日曆
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  title = environment.siteName;
+Will Huang
+老師
+Angular 4 開發實戰：新手入門篇 (資通電腦)
+教室	新竹市東光路192號3樓之3
+練習用 JSON 資料檔：json-server.db.json
 
-  keyword = 'test';
+json-server.db.json
+未知的檔案
+實作練習之網頁版型：Angular2-DEMO-HTML.zip
 
-  data = [
+Angular2-DEMO-HTML.zip
+壓縮檔
+
+{
+  "articles": [
     {
       "id": 1,
       "href": "http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx",
@@ -73,10 +90,6 @@ export class AppComponent {
       "summary": "<p>今年有越來越多企業開始跟我們接洽企業內訓的事，想請我幫他們培訓前端工程師，但你知道一個好的前端工程師絕對不是兩三個月可以養成的，需要多年的努力與磨練才會有點成績。而這幾年可謂<strong>前端正夯</strong>，有為數不少的人開始大規模的往前端開發移動，而我被問到最多的問題就是「請問 JavaScript 要怎麼學？」或「請問 JavaScript 該怎樣入門？」諸如此類的問題。大家都知道，對於一門程式技術來說，「會寫」與「會教」是兩個截然不同的領域，會寫 JavaScript 的人到處都是，但是會教的人就相對少很多了。我這幾年教授 JavaScript 開發實戰課程已經超過 15 梯次，在將近 500 位學員裡面，我所看到的大部分學員都是對 JavaScript 不勝理解，普遍處於一種一知半解、模糊不清的狀態。另一方面，我在公司內部也帶過不少工程師，總是有人會想學習 JavaScript 但不知道如何入門的情況，這讓我陷入深思，該如何幫助一個人學習 JavaScript 從入門到精通呢？本篇文章將說說我個人的一些想法與建議。</p><p>... <a class='more' href='http://blog.miniasp.com/post/2016/02/02/JavaScript-novice-advice-and-learning-resources.aspx#continue'>繼續閱讀</a>...</p>"
     }
   ]
-
-
-  doSearch(str: string) {
-    this.keyword = str;
-  }
-
 }
+json-server.db.json
+目前顯示的是「json-server.db.json」。

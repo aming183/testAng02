@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  siteName: '我的網站prod'
 };
