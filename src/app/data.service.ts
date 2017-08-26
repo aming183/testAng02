@@ -18,7 +18,7 @@ export class DataService {
   /*
   load() {
     return this.http.get('/api/articles.json')
-      .map(res => return res.json());
+      .map(res => res.json());
   }
   */
 
