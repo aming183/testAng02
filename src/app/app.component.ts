@@ -79,4 +79,8 @@ export class AppComponent {
     this.keyword = str;
   }
 
+  doDeleteArticle(item: any) {
+    let i = this.data.indexOf(item);
+    this.data.splice(i, 1);
+  }
 }
