@@ -1,7 +1,7 @@
 <article class="post">
   <header class="post-header">
     <h2 class="post-title">
-        <a [href]="item.href">{{item.title | uppercase}}</a>
+        <a [href]="item.href">{{item.title | translate:'en-tw'}}</a>
     </h2>
     <div class="post-info clearfix">
       <span class="post-date"><i class="glyphicon glyphicon-calendar"></i>{{item.date | date:'yyyy-MM-dd HH:mm:ss'}}
@@ -11,7 +11,7 @@
       <input type="button" value="刪除" (click)="doDelete()">
     </div>
   </header>
-  <section class="post-body text" [innerHTML]="item.summary">
+  <section class="post-body text" [innerHTML]="item.summary | translate:'tw-en'">
   </section>
   <pre>{{ item | json }}</pre>
 </article>
