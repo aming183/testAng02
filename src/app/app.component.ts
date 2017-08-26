@@ -11,14 +11,10 @@ export class AppComponent {
   title = environment.siteName;
 
   keyword = 'test';
-
-  data;
+  data$;
 
   constructor(private dataService: DataService) {
-    dataService.load()
-      .subscribe(res => {
-        this.data = res.json();
-      });
+    this.data$ = dataService.load();
   }
 
   doSearch(str: string) {
@@ -26,7 +22,12 @@ export class AppComponent {
   }
 
   doDeleteArticle(item: any) {
-    let i = this.data.indexOf(item);
-    this.data.splice(i, 1);
+
+    this.dataService.remove(item.id).subscribe((res) => {
+    },
+      (err) => {
+        console.log(err);
+      });
   }
+
 }
