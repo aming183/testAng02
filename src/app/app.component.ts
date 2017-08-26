@@ -14,8 +14,11 @@ export class AppComponent {
 
   data;
 
-  constructor(private dataService: DataService){
-    this.data = dataService.data;
+  constructor(private dataService: DataService) {
+    dataService.load()
+      .subscribe(res => {
+        this.data = res.json();
+      });
   }
 
   doSearch(str: string) {
